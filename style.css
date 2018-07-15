@@ -1,0 +1,77 @@
+
+* {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 68.5%;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 40rem;
+  width: 90%;
+}
+.bookDiv {
+  border: .7rem solid lightblue;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.book {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.button {
+  text-align: center;
+}
+
+input {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem;
+  outline: none;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: .3rem .3rem .3rem gray;
+  box-shadow: .3rem .3rem .3rem gray;
+}
+
+input:active {
+  -webkit-box-shadow: .1rem .1rem .1rem gray;
+  box-shadow: .1rem .1rem .1rem gray;
+  -webkit-transform: translate(.1rem);
+  transform: translate(.1rem)
+}
+
+
