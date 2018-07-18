@@ -28,6 +28,7 @@ const books = [
   {id: 26, title: "Sleeping Giants"},
   {id: 27, title: "Reincarnation Blues"},
   {id: 28, title: "Sometimes I Lie"},
+  {id: 29, title: "Maze Master"},
 ]
 
 const bookHtml = document.querySelector(".book");
