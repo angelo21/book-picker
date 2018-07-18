@@ -1,34 +1,34 @@
 
 const books = [
-  {id: 1, title: "The butterfly Garden"},
-  {id: 2, title: "A cabin at the end of the world"},
-  {id: 3, title: "Fantasticland"},
-  {id: 4, title: "The girl next door"},
-  {id: 5, title: "The last policeman"},
-  {id: 6, title: "The library at mount char"},
-  {id: 7, title: "Lolita"},
-  {id: 8, title: "Mr. penumbra"},
-  {id: 9, title: "Six wakes"},
-  {id: 10, title: "Sleeping giants"},
-  {id: 11, title: "Sphere"},
-  {id: 12, title: "The wasp factory"},
-  {id: 13, title: "Version control"},
-  {id: 14, title: "The Anomoly"},
-  {id: 15, title: "Off to be the wizard"},
-  {id: 16, title: "84k"},
-  {id: 17, title: "Guess Who"},
-  {id: 18, title: "The book of m"},
-  {id: 19, title: "The girl with the dragon tattoo"},
-  {id: 20, title: "Halcyon"},
-  {id: 21, title: "House of cards"},
-  {id: 22, title: "The lies of locke lamora"},
-  {id: 23, title: "Paradox Bound"},
-  {id: 24, title: "Red dragon"},
-  {id: 25, title: "Semiosis"},
-  {id: 26, title: "Sleeping Giants"},
-  {id: 27, title: "Reincarnation Blues"},
-  {id: 28, title: "Sometimes I Lie"},
-  {id: 29, title: "Maze Master"},
+  {title: "The butterfly Garden"},
+  {title: "A cabin at the end of the world"},
+  {title: "Fantasticland"},
+  {title: "The girl next door"},
+  {title: "The last policeman"},
+  {title: "The library at mount char"},
+  {title: "Lolita"},
+  {title: "Mr. penumbra"},
+  {title: "Six wakes"},
+  {title: "Sleeping giants"},
+  {title: "Sphere"},
+  {title: "The wasp factory"},
+  {title: "Version control"},
+  {title: "The Anomoly"},
+  {title: "Off to be the wizard"},
+  {title: "84k"},
+  {title: "Guess Who"},
+  {title: "The book of m"},
+  {title: "The girl with the dragon tattoo"},
+  {title: "Halcyon"},
+  {title: "House of cards"},
+  {title: "The lies of locke lamora"},
+  {title: "Paradox Bound"},
+  {title: "Red dragon"},
+  {title: "Semiosis"},
+  {title: "Sleeping Giants"},
+  {title: "Reincarnation Blues"},
+  {title: "Sometimes I Lie"},
+  {title: "Maze Master"},
 ]
 
 const bookHtml = document.querySelector(".book");
@@ -36,11 +36,18 @@ const button = document.querySelector("input");
 
 button.addEventListener("click", function() {
   let ranNum = Math.floor(Math.random() * books.length) + 1;
-  books.forEach(item => {
+  
+  books.forEach((item,index) => {
+
+    //DYNAMICALLY ADD ID TO OBJECTS
+    books[index]["id"] = index + 1
+    
     if (item.id === ranNum) {
       let num = 5;
-      bookHtml.textContent = "Finding Your Book..."
+      
+      //START A 5 SECOND COUNT DOWN BEFORE BOOK REVEAL
 
+      bookHtml.textContent = "Finding Your Book..."
       const picker = setInterval(() => {
         bookHtml.textContent = num;
         num--
@@ -52,6 +59,7 @@ button.addEventListener("click", function() {
     }
   })
 })
+
 
 
 
