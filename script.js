@@ -37,7 +37,17 @@ button.addEventListener("click", function() {
   let ranNum = Math.floor(Math.random() * books.length) + 1;
   books.forEach(item => {
     if (item.id === ranNum) {
-      bookHtml.textContent = item.title;
+      let num = 5;
+      bookHtml.textContent = "Finding Your Book..."
+
+      const picker = setInterval(() => {
+        bookHtml.textContent = num;
+        num--
+        if(num === -1) {
+          bookHtml.textContent = item.title;
+          clearInterval(picker)
+        }
+      }, 1000)
     }
   })
 })
