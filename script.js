@@ -30,6 +30,8 @@ const books = [
   {title: "Maze Master"},
   {title: "Baby Teeth"},
   {title: "Innocents Lost"},
+  {title: "The Shining"},
+  {title: "Misery"},
 ]
 
 const bookHtml = document.querySelector(".book");
