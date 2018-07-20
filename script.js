@@ -19,7 +19,6 @@ const books = [
   {title: "Guess Who"},
   {title: "The book of m"},
   {title: "The girl with the dragon tattoo"},
-  {title: "Halcyon"},
   {title: "House of cards"},
   {title: "The lies of locke lamora"},
   {title: "Paradox Bound"},
@@ -30,6 +29,7 @@ const books = [
   {title: "Sometimes I Lie"},
   {title: "Maze Master"},
   {title: "Baby Teeth"},
+  {title: "Innocents Lost"},
 ]
 
 const bookHtml = document.querySelector(".book");
@@ -39,7 +39,7 @@ button.addEventListener("click", function() {
   let ranNum = Math.floor(Math.random() * books.length) + 1;
   
   books.forEach((item,index) => {
-
+    
     //DYNAMICALLY ADD ID TO OBJECTS
     books[index]["id"] = index + 1
     
