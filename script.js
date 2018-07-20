@@ -32,6 +32,8 @@ const books = [
   {title: "Innocents Lost"},
   {title: "The Shining"},
   {title: "Misery"},
+  {title: "Pet Semetary"},
+  {title: "Night Film"},
 ]
 
 const bookHtml = document.querySelector(".book");
