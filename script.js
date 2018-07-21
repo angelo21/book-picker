@@ -40,7 +40,7 @@ const books = [
 
 const bookHtml = document.querySelector(".book");
 const randomBook = document.querySelector(".random-book");
-const listAll = document.querySelector(".list-all");
+
 
 randomBook.addEventListener("click", function() {
   let ranNum = Math.floor(Math.random() * books.length) + 1;
