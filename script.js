@@ -39,9 +39,10 @@ const books = [
 ]
 
 const bookHtml = document.querySelector(".book");
-const button = document.querySelector("input");
+const randomBook = document.querySelector(".random-book");
+const listAll = document.querySelector(".list-all");
 
-button.addEventListener("click", function() {
+randomBook.addEventListener("click", function() {
   let ranNum = Math.floor(Math.random() * books.length) + 1;
   
   books.forEach((item,index) => {
@@ -65,7 +66,18 @@ button.addEventListener("click", function() {
       }, 1000)
     }
   })
-})
+});
+
+//SHOW FULL LIST OF BOOKS
+
+listAll.addEventListener("click", function() {
+  const fullList = document.querySelector(".full-list");
+  books.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = `${item.title}`
+    fullList.appendChild(li)
+  })
+});
 
 
 
