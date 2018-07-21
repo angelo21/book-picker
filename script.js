@@ -68,16 +68,7 @@ randomBook.addEventListener("click", function() {
   })
 });
 
-//SHOW FULL LIST OF BOOKS
 
-listAll.addEventListener("click", function() {
-  const fullList = document.querySelector(".full-list");
-  books.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = `${item.title}`
-    fullList.appendChild(li)
-  })
-});
 
 
 
