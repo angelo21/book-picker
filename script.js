@@ -34,6 +34,8 @@ const books = [
   {title: "Misery"},
   {title: "Pet Semetary"},
   {title: "Night Film"},
+  {title: "Snap"},
+  {title: "The Bankers Wife"},
 ]
 
 const bookHtml = document.querySelector(".book");
