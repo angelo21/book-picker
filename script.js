@@ -36,6 +36,10 @@ const books = [
   {title: "Night Film"},
   {title: "Snap"},
   {title: "The Bankers Wife"},
+  {title: "Infected"},
+  {title: "Brillance"},
+  {title: "Touch"},
+  {title: "Unhappenings"},
 ]
 
 const bookHtml = document.querySelector(".book");
